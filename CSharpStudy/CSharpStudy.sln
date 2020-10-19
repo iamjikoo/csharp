@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DA49A6F3-298A-44CD-ACB6-310C904A8F86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DA49A6F3-298A-44CD-ACB6-310C904A8F86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeFigures", "ShapeFigures\ShapeFigures.csproj", "{41ACD01D-FCCD-4B3B-B7AA-85E6491BA1E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringManipulation", "StringManipulation\StringManipulation.csproj", "{0922AA42-86CC-4CD6-A4A4-D2F764D3D0C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{DA49A6F3-298A-44CD-ACB6-310C904A8F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA49A6F3-298A-44CD-ACB6-310C904A8F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA49A6F3-298A-44CD-ACB6-310C904A8F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41ACD01D-FCCD-4B3B-B7AA-85E6491BA1E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41ACD01D-FCCD-4B3B-B7AA-85E6491BA1E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41ACD01D-FCCD-4B3B-B7AA-85E6491BA1E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41ACD01D-FCCD-4B3B-B7AA-85E6491BA1E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0922AA42-86CC-4CD6-A4A4-D2F764D3D0C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0922AA42-86CC-4CD6-A4A4-D2F764D3D0C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0922AA42-86CC-4CD6-A4A4-D2F764D3D0C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0922AA42-86CC-4CD6-A4A4-D2F764D3D0C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
