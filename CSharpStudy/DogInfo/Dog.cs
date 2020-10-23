@@ -6,19 +6,25 @@ namespace DogInfo
 {
     public class Dog
     {
+
+        #region Fields
         // Field
         private string name;
         private string breed;
         private string colour;
         int sex;
+        #endregion
 
+        #region Constroctor
         // Constructor
         //public Dog(string name)
         //{
         //    //name = string.Empty;
         //    this.name = name;
-        //}              
+        //}  
+        #endregion
 
+        #region Properties
         // Property
         //public string Name
         //{
@@ -45,7 +51,9 @@ namespace DogInfo
             get { return this.sex; }
             set { this.sex = value; }
         }
+        #endregion
 
+        #region Public Methods
         // method
         public string GetDogData()
         {
@@ -53,5 +61,6 @@ namespace DogInfo
                 this.name, this.breed, this.colour, this.sex);
             return data;
         }
+        #endregion
     }
 }
