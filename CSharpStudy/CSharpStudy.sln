@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringManipulation", "Strin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInfo", "UserInfo\UserInfo.csproj", "{8EBF6F29-03A8-4E59-BB5C-21BB0679C251}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DogInfo", "DogInfo\DogInfo.csproj", "{18F08A37-483F-48EE-AA1E-46DCFCDA52A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8EBF6F29-03A8-4E59-BB5C-21BB0679C251}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EBF6F29-03A8-4E59-BB5C-21BB0679C251}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EBF6F29-03A8-4E59-BB5C-21BB0679C251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F08A37-483F-48EE-AA1E-46DCFCDA52A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F08A37-483F-48EE-AA1E-46DCFCDA52A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F08A37-483F-48EE-AA1E-46DCFCDA52A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F08A37-483F-48EE-AA1E-46DCFCDA52A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
