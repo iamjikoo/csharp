@@ -10,18 +10,16 @@ namespace DogInfo
         #region Fields
         // Field
         private string name;
-        private string breed;
-        private string colour;
-        int sex;
+        private int age;
         #endregion
 
         #region Constroctor
         // Constructor
-        //public Dog(string name)
-        //{
-        //    //name = string.Empty;
-        //    this.name = name;
-        //}  
+        public Dog(string name)
+        {
+            //name = string.Empty;
+            this.name = name;
+        }
         #endregion
 
         #region Properties
@@ -33,23 +31,15 @@ namespace DogInfo
         //}
         public string Name { get; set; }
 
-        //public string Breed
+        //public string Age
         //{
-        //    get { return this.breed; }
-        //    set { this.breed = value; }
+        //    get { return this.age; }
+        //    set { this.age = value; }
         //}
-        public string Breed { get; set; }
-
-        public string Colour
+        public int Age
         {
-            get { return this.colour; }
-            set { this.colour = value; }
-        }
-
-        public int Sex
-        {
-            get { return this.sex; }
-            set { this.sex = value; }
+            get { return this.age; }
+            set { this.age = value; }
         }
         #endregion
 
@@ -57,10 +47,13 @@ namespace DogInfo
         // method
         public string GetDogData()
         {
-            string data = string.Format("Name: {0} Breed: {1} Colour: {2} Sex: {3}",
-                this.name, this.breed, this.colour, this.sex);
+            string data = string.Format("Name: {0} Age: {1}",
+                this.name, this.age);
             return data;
         }
+
+        //public 
+
         #endregion
     }
 }

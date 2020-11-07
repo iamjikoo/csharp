@@ -9,64 +9,74 @@ namespace DogInfo
         {
             string menu;
             string name;
-            string breed;
-            int sex;
+            int age;
 
-            List<Dog> Dogs = new List<Dog>();
+            List<Dog> dogs = new List<Dog>();
 
-            Console.WriteLine("Welcome to the Dog Information System");
+            Console.WriteLine("============= Welcome to the Dog Information System =============");
 
             // List, Hashset, Queue, Stack
 
+            //dogs.
+
+            menu = "hello";
+
+            ////////dog a = new dog("aa");
+
+            //a.
 
             while (true)
             {
                 Console.WriteLine();
-                Console.WriteLine("A. Display the name, breed, colour, and sex of the doay");
-                Console.WriteLine("B. Add a new dog");
-                Console.WriteLine("C. Edit an existing dog");
-                Console.WriteLine("D. Display data from class");
-                Console.WriteLine("E. Exit the program");
-                Console.Write("\nSelect menu: ");
+                Console.WriteLine(" A. All dogs data");
+                Console.WriteLine(" B. Build a new dog data");
+                Console.WriteLine(" C. Change a dog data");
+                Console.WriteLine(" D. Display selected dog data");
+                Console.WriteLine(" E. Exit the program");
+                Console.Write("\n Select menu: ");
 
                 menu = Console.ReadLine();
 
                 switch (menu)
                 {
                     case "A": case "a":
-                        foreach (Dog dog in Dogs)
+                        foreach (Dog dog in dogs)
                         {
-                            Console.WriteLine("Name: {0} Breed: {1} Sex: {2}", dog.Name, dog.Breed, dog.Sex);
+                            Console.WriteLine("Name: {0} Age: {1}", dog.Name, dog.Age);
                         }
                         //Dog newDog = new Dog();
                         // add a new dog
                         break;
 
                     case "B": case "b":
-                        //Console.Write("Name: ");
-
-                        //name = Console.ReadLine();
-                        //newDog.Name = name;
-
-                        Dog newDog = new Dog();
-
-                        Console.Write("Name: ");
-
+                        Console.Write("    Name: ");
                         name = Console.ReadLine();
-                        newDog.Name = name;
 
-                        Console.Write("Breed: ");
-                        breed = Console.ReadLine();
-                        newDog.Breed = breed;
+                        bool isExist = false;
 
-                        //Console.Write("Colour: ");
-                        //colour = Console.ReadLine();
+                        // check if the dog is already in the list
+                        foreach (Dog dog in dogs)
+                        {
+                            if (dog.Name == name)
+                            {
+                                Console.WriteLine("The dog \"{0}\" is already  exist. Stopped", name);
+                                isExist = true;
+                                break;
+                            }
+                        }
 
-                        Console.Write("Sex 1: female, 2: male: ");
-                        sex = int.Parse(Console.ReadLine());
-                        newDog.Sex = sex;
+                        
 
-                        Dogs.Add(newDog);
+                        if (isExist) continue;
+
+                        Console.Write("    Age: ");
+                        age = int.Parse(Console.ReadLine());
+
+                        Dog newDog = new Dog(name );
+
+                        newDog.Age = age;
+
+                        dogs.Add(newDog);
 
                         // edit dog 
                         break;
@@ -77,6 +87,18 @@ namespace DogInfo
                         break;
 
                     case "D": case "d":
+                        Console.Write("Enter dog name: ");
+                        name = Console.ReadLine();
+                        foreach (Dog dog in dogs)
+                        {
+                            if (name == dog.Name)
+                            {
+                                Console.Write("Enter dog new age: ");
+                                age = int.Parse(Console.ReadLine());
+                            }
+                            
+
+                        }
                         break;
 
                     case "E": case "e":
@@ -84,7 +106,7 @@ namespace DogInfo
                         break;
 
                     default:
-                        Console.WriteLine("Invalid menu: {0}", menu);
+                        Console.WriteLine("Invalid menu selected: {0}", menu);
                         break;
                 }
 
